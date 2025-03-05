@@ -1,0 +1,291 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-image: url("/css/backGround.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* ------------------------------------------- */
+
+
+header{
+    height: 50px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    visibility: visible;
+}
+.logoDiv{
+    width: fit-content;
+    height: 50px;
+    margin-left: 10px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.logoImg{
+    width: 30px;
+    height: 30px;
+}
+.logoP{
+    margin:0;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+
+
+/* -------------------------------------------------------- */
+
+
+.Main-Container{
+    width: 100%;
+    height: 500px;
+    background-color: transparent;
+    display: flex;
+}
+
+
+/* -------------------  left SECTION ------------------ */
+
+
+
+.left-section{
+    width: 50%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 50px;
+}
+
+.options{
+    width: 350px;
+    height: 150px;
+    background-color: rgb(222, 220, 220);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    border: 2px solid rgb(138, 138, 138);
+    /* box-shadow: 0px 0px 20px rgb(224, 224, 224); */
+}
+.login-a{
+    color: rgb(66, 39, 91);
+    margin-left: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.infoP{
+    margin: 0;
+    margin-bottom: 3px;
+    margin-left: 20px;
+    cursor: default;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------right SECTION ----------- */
+
+
+.right-section{
+    width: 50%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    visibility: visible;
+}
+
+.right-logo-div{
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    padding: 15px;
+}
+.logos{
+    height: fit-content;
+    width: 130px;
+}
+#textlogo{
+    margin-bottom: 33px;
+    margin-right: 50px;
+}
+
+
+.right-section-btns{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: right;
+}
+#login-btn{
+    width:140px;
+    height: 40px;
+    border: none;
+    margin-right: 150px;
+    background-color: rgb(66, 39, 91);
+    font-size: 1.3em;
+    font-weight: bold;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+/* ----------------------------- */
+
+
+
+@media only screen and (min-width:600px) and (max-width:1024px) {
+    .Main-Container{
+        flex-direction: row;
+    }
+    .left-section{
+        justify-content:flex-start;
+        row-gap: 5px;
+    }
+    .options{
+        width: 220px;
+        height: 100px;
+        margin-top: 40px;
+    }
+    #option2{
+        margin-top:0px;
+    }
+    .login-a{
+        margin-left: 20px;
+        margin-top: 5px;
+        font-weight:600;
+    }
+    .infoP{
+        font-size: 12px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    .right-section{
+        display: flex;
+        flex-direction: column;
+        visibility: visible;
+    }
+    
+    .right-logo-div{
+        background-color: transparent;
+        display: flex;
+        justify-content: flex-end;
+        align-items: end;
+    }
+    .logos{
+        height: fit-content;
+        width: 130px;
+    }
+    #textlogo{
+        margin-bottom: 33px;
+        margin-right: 50px;
+    }
+    
+    
+    .right-section-btns{
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        display: flex;
+        justify-content: right;
+    }
+    #login-btn{
+        width:120px;
+        height: 30px;
+        border: none;
+        margin-right: 150px;
+        background-color: rgb(66, 39, 91);
+        font-size: 1em;
+        font-weight: bold;
+        border-radius: 3px;
+        color: white;
+        cursor: pointer;
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:320px) and (max-width:600px) {
+    .Main-Container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .options{
+        width: 200px;
+        height: 100px;
+    }
+    .login-a{
+        margin-left: 20px;
+        margin-top: 5px;
+        font-weight:600;
+    }
+    .infoP{
+        font-size: 11px;
+    }
+
+    .right-section{
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
